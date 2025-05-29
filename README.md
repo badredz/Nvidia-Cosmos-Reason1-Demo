@@ -5,6 +5,16 @@ This is a Gradio-based demo application showcasing [NVIDIA's Cosmos-Reason1-7B](
 Model : [Cosmos-Reason1-7B](https://huggingface.co/nvidia/Cosmos-Reason1-7B)
 ---
 
+## Video Inference
+
+https://github.com/user-attachments/assets/c78882ff-3ebd-4b1f-b08f-8a39d0e0acc1
+
+## Image Inference
+
+![Screenshot 2025-05-29 at 22-57-46 Cosmos Reason1 - a Hugging Face Space by prithivMLmods](https://github.com/user-attachments/assets/b8249782-6d35-4994-964d-88b10c82d563)
+
+---
+
 ## Features
 
 * **Image Reasoning**: Upload an image and ask a question or provide a prompt to receive detailed responses from the model.

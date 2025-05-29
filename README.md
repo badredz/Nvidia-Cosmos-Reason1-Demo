@@ -2,7 +2,7 @@
 
 This is a Gradio-based demo application showcasing [NVIDIA's Cosmos-Reason1-7B](https://huggingface.co/nvidia/Cosmos-Reason1-7B) model for multi-modal reasoning on both **images** and **videos**. It leverages the powerful capabilities of the Cosmos model for answering questions, generating detailed descriptions, and analyzing visual content.
 
-Model : [Nvidia-Cosmos-Reason1](https://huggingface.co/nvidia/Cosmos-Reason1-7B)
+Model : [Cosmos-Reason1-7B](https://huggingface.co/nvidia/Cosmos-Reason1-7B)
 ---
 
 ## Features

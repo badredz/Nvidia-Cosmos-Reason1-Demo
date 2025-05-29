@@ -7,7 +7,7 @@ Model : [Cosmos-Reason1-7B](https://huggingface.co/nvidia/Cosmos-Reason1-7B)
 
 ## Video Inference
 
-https://github.com/user-attachments/assets/c78882ff-3ebd-4b1f-b08f-8a39d0e0acc1
+https://github.com/user-attachments/assets/ba695d64-2281-45d1-8616-4ce7c996e483
 
 ## Image Inference
 

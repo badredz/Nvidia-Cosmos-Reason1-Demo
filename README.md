@@ -1,4 +1,4 @@
-# Cosmos-Reason1: Image and Video Reasoning App
+# Nvidia-Cosmos-Reason1: Image and Video Reasoning App
 
 This is a Gradio-based demo application showcasing [NVIDIA's Cosmos-Reason1-7B](https://huggingface.co/nvidia/Cosmos-Reason1-7B) model for multi-modal reasoning on both **images** and **videos**. It leverages the powerful capabilities of the Cosmos model for answering questions, generating detailed descriptions, and analyzing visual content.
 

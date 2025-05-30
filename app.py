@@ -23,7 +23,8 @@ from transformers.image_utils import load_image
 # Constants for text generation
 MAX_MAX_NEW_TOKENS = 2048
 DEFAULT_MAX_NEW_TOKENS = 1024
-MAX_INPUT_TOKEN_LENGTH = int(os.getenv("MAX_INPUT_TOKEN_LENGTH", "4096"))
+# Increase or disable input truncation to avoid token mismatches
+MAX_INPUT_TOKEN_LENGTH = int(os.getenv("MAX_INPUT_TOKEN_LENGTH", "8192"))
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -84,7 +85,7 @@ def generate_image(text: str, image: Image.Image,
         images=[image],
         return_tensors="pt",
         padding=True,
-        truncation=True,
+        truncation=False,
         max_length=MAX_INPUT_TOKEN_LENGTH
     ).to("cuda")
     streamer = TextIteratorStreamer(processor, skip_prompt=True, skip_special_tokens=True)
@@ -128,7 +129,7 @@ def generate_video(text: str, video_path: str,
         add_generation_prompt=True,
         return_dict=True,
         return_tensors="pt",
-        truncation=True,
+        truncation=False,
         max_length=MAX_INPUT_TOKEN_LENGTH
     ).to("cuda")
     streamer = TextIteratorStreamer(processor, skip_prompt=True, skip_special_tokens=True)

